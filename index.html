@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+        <title>Form Peminjaman</title>
+    </head>
+<body>
+    <header>
+        <div class="navbar-fixed">  
+            <nav class="indigo darken-4">
+                <div class="nav-wrapper container">
+                    <a href="https://kelompok4pbw.github.io/" class="brand-logo">
+                        <div class="logo-container">
+                            <img class="logo" src="img/logo.png" alt="Logo PBWOW Store" style="height: 50px;">
+                            <span class="logo" id="logo-text">PBWOW Store</span>
+                        </div>
+                    </a>
+                    <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="https://kelompok4pbw.github.io/"><i class="material-icons left">home</i>Home</a></li>
+                        <li><a href="https://kelompok4pbw.github.io/daftar-komik/"><i class="material-icons left">library_books</i>Daftar Komik</a></li>
+                        <li><a href="https://kelompok4pbw.github.io/daftar-pinjam/"><i class="material-icons left">people</i>Daftar Peminjam</a></li>
+                        <li><a class="dropdown-trigger" href="#" data-target="dropdown1">Tambah<i
+                                    class="material-icons right">arrow_drop_down</i></a></li>
+                    </ul>
+                    <ul id="dropdown1" class="dropdown-content">
+                        <li><a href="https://kelompok4pbw.github.io/form-komik/">Tambah Komik</a></li>
+                        <li><a href="https://kelompok4pbw.github.io/form-pinjam/">Tambah Peminjam</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- sidenav -->
+        <ul class="sidenav" id="mobile-nav">
+            <li><a href="3AAGabungan.html"><i class="material-icons left">home</i>Home</a></li>
+            <li><a href="https://kelompok4pbw.github.io/daftar-komik/"><i class="material-icons left">library_books</i>Daftar Komik</a></li>
+            <li><a href="https://kelompok4pbw.github.io/daftar-pinjam/"><i class="material-icons left">people</i>Daftar Peminjam</a></li>
+            <li><a href="https://kelompok4pbw.github.io/form-komik/"><i class="material-icons left">add</i>Tambah Komik</a></li>
+            <li><a href="https://kelompok4pbw.github.io/form-pinjam/"><i class="material-icons left">add</i>Tambah Peminjam</a></li>
+        </ul>
+    </header>
+
+    <div class="form-container">
+        <form>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="id" type="text" class="validate">
+                    <label for="id">ID</label>
+                </div>
+            </div>
+       
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="nama" type="text" class="validate">
+                    <label for="nama">Nama</label>
+                </div>
+            </div>
+       
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="email" type="email" class="validate">
+                    <label for="emai">Email</label>
+                </div>
+            </div>
+       
+            <div class="row">
+                <div class="col s12">
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <footer class="page-footer black">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Materialize Group</h5>
+                    <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam varius tincidunt nunc, nec tincidunt nulla aliquam eu. Sed fermentum ultrices ligula, sit amet tempor sapien fermentum et.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="black white-text">Hubungi kami</h5>
+                    <ul class="left-align">
+                      <li><a class="grey-text text-lighten-3" href="mailto:shafnanda18@gmail.com"><i class="material-icons left">email</i>kel4materialize@gmail.com</a></li>
+                      <li><a class="grey-text text-lighten-3" href="https://wa.me/6285812723448"><i class="material-icons left">chat</i>085812723448</a></li>
+                      <li><a class="grey-text text-lighten-3" href="https://www.stis.ac.id/"><i class="material-icons left">home</i>Jalan Otto Iskandardinata No.64 C</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2024 Materialize Group. All rights reserved.
+                <!-- <a class="grey-text text-lighten-4 right" href="#">More Links</a> -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
