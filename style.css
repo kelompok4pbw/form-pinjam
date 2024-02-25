@@ -15,15 +15,69 @@
     margin-left: 10px;
 }
 
-@media (max-width: 992px) {
-    .logo-text {
+@media (max-width: 480px) {
+    #logo-text {
         display: none;
+    }
+
+    .logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: .1em;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .sidenav.sidenav-fixed {
+      -webkit-transform: translateX(-105%);
+              transform: translateX(-105%);
+    }
+    .sidenav.sidenav-fixed.right-aligned {
+      -webkit-transform: translateX(105%);
+              transform: translateX(105%);
+    }
+    .sidenav > a {
+      padding: 0 16px;
+    }
+    .sidenav .user-view {
+      padding: 16px 16px 0;
+    }
+  }
+
+@media only screen and (max-width: 1100px) {
+    .hide-on-med-and-down {
+      display: none !important;
+    }
+    nav a.sidenav-trigger {
+        display: block;
+      }
+  }
+
+@media only screen and (max-width: 1100px) {
+    nav .brand-logo {
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%);
+    }
+    nav .brand-logo.left, nav .brand-logo.right {
+      padding: 0;
+      -webkit-transform: none;
+              transform: none;
+    }
+    nav .brand-logo.left {
+      left: 0.5rem;
+    }
+    nav .brand-logo.right {
+      right: 0.5rem;
+      left: auto;
     }
 }
 
 nav .sidenav-trigger {
     float: right;
 }
+
 
 .input-field input[type=text]:focus + label,
 .input-field input[type=email]:focus + label {
